@@ -7,10 +7,9 @@ Also, the concepts convered in each are written next to the name
 - [x] Anime list cards 
 - [x] Carousel (useState hook, localStorage)
 - [x] Find someone's github username (fetching data using APIs)
-- [ ] Error redirect page
-- [ ] Auto detect your location (INTERMEDIATE)
+- [x] Error redirect page
+- [x] Auto detect your location (INTERMEDIATE)
 - [ ] Online chat interface (like whatsapp web), without the full functionality ofc (backend needed for full functionality, or atleast firebase)
 - [ ] Music player
-- [ ] Login page
 
 PS. We will do styling at the end, functionality first. Styling will include using external fonts and icons.
