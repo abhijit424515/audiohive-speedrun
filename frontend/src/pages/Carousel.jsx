@@ -7,33 +7,22 @@ import {
 
 function Carousel() {
   const [imageNumber, setImageNumber] = useState(1);
+
   return (
     <div className="w-screen h-screen flex justify-center items-center outline-none">
       <button
         className="w-[10vw] h-full flex justify-center items-center"
-        onClick={() => {
-          let newImageNumber = imageNumber - 1;
-          if (newImageNumber < 1) {
-            newImageNumber += 5;
-          }
-          setImageNumber(newImageNumber);
-        }}
+        onClick={() => setImageNumber(((imageNumber + 3) % 5) + 1)}
       >
         <IoIosArrowDropleftCircle className="text-[3rem]" />
       </button>
       <img
-        src={"/assets/" + imageNumber.toString() + ".jpg"}
+        src={`/assets/${imageNumber}.jpg`}
         className="aspect-[1.777] w-[80vw] rounded-[2rem]"
       />
       <button
         className="w-[10vw] h-full flex justify-center items-center outline-none"
-        onClick={() => {
-          let newImageNumber = imageNumber + 1;
-          if (newImageNumber > 5) {
-            newImageNumber -= 5;
-          }
-          setImageNumber(newImageNumber);
-        }}
+        onClick={() => setImageNumber((imageNumber % 5) + 1)}
       >
         <IoIosArrowDroprightCircle className="text-[3rem]" />
       </button>
