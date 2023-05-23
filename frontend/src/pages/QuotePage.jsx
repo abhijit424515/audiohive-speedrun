@@ -15,7 +15,6 @@ function QuotePage() {
     const response = await axios.get(
       "https://api.api-ninjas.com/v1/quotes?category=happiness",
       {
-        // mode: "cors", // no-cors, *cors, same-origin
         headers: { "X-Api-Key": api_key },
       }
     );

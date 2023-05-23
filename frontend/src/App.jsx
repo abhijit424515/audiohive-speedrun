@@ -7,6 +7,8 @@ import Carousel from "./pages/Carousel";
 import GithubSearch from "./pages/GithubSearch";
 import Error404 from "./pages/Error404";
 import GPS from "./pages/GPS";
+import Chat from "./pages/Chat";
+import MusicPlayer from "./pages/MusicPlayer";
 
 function App() {
   return (
@@ -26,6 +28,8 @@ function App() {
         <Route path="/carousel" element={<Carousel />} />
         <Route path="/github-search" element={<GithubSearch />} />
         <Route path="/gps" element={<GPS />} />
+        <Route path="/chat" element={<Chat />} />
+        <Route path="/music-player" element={<MusicPlayer />} />
         <Route path="*" element={<Error404 />} />
       </Routes>
     </Router>
