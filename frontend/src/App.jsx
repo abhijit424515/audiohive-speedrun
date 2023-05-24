@@ -9,6 +9,7 @@ import Error404 from "./pages/Error404";
 import GPS from "./pages/GPS";
 import Chat from "./pages/Chat";
 import MusicPlayer from "./pages/MusicPlayer";
+import CoolCarousel from "./pages/CoolCarousel";
 
 function App() {
   return (
@@ -30,6 +31,7 @@ function App() {
         <Route path="/gps" element={<GPS />} />
         <Route path="/chat" element={<Chat />} />
         <Route path="/music-player" element={<MusicPlayer />} />
+        <Route path="/cool-carousel" element={<CoolCarousel />} />
         <Route path="*" element={<Error404 />} />
       </Routes>
     </Router>
